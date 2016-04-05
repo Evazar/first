@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="gemStore">
+	<title>Второй сайт </title>
+  <head>
+  	<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+   <link rel="stylesheet" type="text/css"  href="bootstrap.min.css" />
+  </head>
+  <body class="container" ng-controller ="StoreController as store">
+    <div class="product row">
+      <h3>
+        {{store.product.name}}
+        <em class="pull-right">{{store.product.price}}</em>
+      </h3>
+      <ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <img src="http://placehold.it/300x200" alt="">
+      <h3>Ярлык миниатюры</h3>
+      <p>Заголовок миниа</p>
+    </div>
+  </li>
+  ...
+</ul>
+    </div>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
+  </body>
+</html>
